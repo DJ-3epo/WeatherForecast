@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Switch
+        android:id="@+id/push_notifications_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Push Notifications"/>
+
+    <TextView
+        android:id="@+id/temp_unit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature Unit (°C / °F)"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/temp_unit_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/celsius_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°C"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/fahrenheit_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°F"/>
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/theme_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Dark Mode"/>
+
+</LinearLayout>
